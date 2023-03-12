@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">
+      free code camp survey form
+    </h1>
+    <p id="description">
+      please fill out this form
+    </p>
+      <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Enter your name: <input id="name" type="text" required placeholder="enter your full name">
+            </label>
+            <label for="email" id="email-label">Enter your email: <input id="email" type="email" required placeholder="enter your email adress">
+            </label>
+            <label for="number" id="number-label">Enter your number: <input id="number" type="number" required min="1000000000" max="9999999999" placeholder="enter your number">
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="dropdown">How did you hear about us?
+            <select id="dropdown" name="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">chillin</option>
+              <option value="2">villian</option>
+            </select>
+          </label>
+          </fieldset>
+          <fieldset>
+          <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="1"/> Personal Account</label>
+          <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="2"/> Business Account</label>
+          <label for="terms-and-conditions" name="terms-and-conditions">
+          </label>
+        </fieldset>
+        <fieldset>
+              <legend>What's your cat's personality?</legend>
+              <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+              <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+              <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+            </fieldset>
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+      
+  </body>
+</html>
